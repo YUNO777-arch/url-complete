@@ -54,7 +54,7 @@ app.post("/api/shorturl",async (req,res)=>{
             shortUrl: await generatecode(),
         });
        const response ={
-        Shorturl:"https://url-complete-2.onrender.com:"+port+"/"+url.shortUrl
+        Shorturl:"https://url-complete-2.onrender.com"+"/"+url.shortUrl
        }
        res.status(201).json(response);
     } catch (error) {
