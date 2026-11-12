@@ -4,7 +4,7 @@ function App() {
   async function ShortenUrl(){
     try{
       console.log("Shortening URL",url);
-      const response = await fetch("http://localhost:3000/api/shorturl", {
+      const response = await fetch("https://url-complete-2.onrender.com:3000/api/shorturl", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
